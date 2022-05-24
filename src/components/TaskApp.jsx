@@ -10,7 +10,7 @@ const TaskApp = () => {
   // NOTE: do not delete `data-cy` key value pair
   const [task,setTask] =useState(data)
   let  id1 = task.length+1
-  console.log(task)
+ 
    const addTodo = (newTodo)=>{
      setTask([...task,{
    id:id1,
@@ -31,7 +31,7 @@ const TaskApp = () => {
       {/* Tasks */}
       <TaskHeader/>
       <AddTask addTodo={addTodo} />
-       <Tasks data = {task}    />
+       <Tasks info = {task}    />
   
   
 

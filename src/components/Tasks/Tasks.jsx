@@ -1,12 +1,12 @@
 import React,{useState} from "react";
 import styles from "./tasks.module.css";
 import Task from '../Task/Task'
-const Tasks = ({data}) => {
+const Tasks = ({info}) => {
   // NOTE: do not delete `data-cy` key value pair
  // console.log(data)
- const [task,setTask] =useState(data)
+ const [task,setTask] =useState(info)
  
-
+console.log(info)
  
  const deleteTodo =(value)=>{
   setTask(task.filter((todo)=>todo !==value))
